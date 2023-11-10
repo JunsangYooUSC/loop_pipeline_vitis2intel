@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">loop_pipeline</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments>
+      <interconnectAssignment>
+        <name>$system.qsys_mm.clockCrossingAdapter</name>
+        <value>HANDSHAKE</value>
+      </interconnectAssignment>
+      <interconnectAssignment>
+        <name>$system.qsys_mm.maxAdditionalLatency</name>
+        <value>0</value>
+      </interconnectAssignment>
+    </interconnectAssignments>
+    <className>loop_pipeline</className>
+    <version>1.0</version>
+    <name>loop_pipeline</name>
+    <uniqueName>loop_pipeline</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">loop_pipeline_internal_inst</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters></parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>loop_pipeline_internal</className>
+        <version>1.0</version>
+        <name>loop_pipeline_internal_inst</name>
+        <uniqueName>loop_pipeline_internal</uniqueName>
+        <fixedName>loop_pipeline_internal</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>loop_pipeline.loop_pipeline_internal_inst</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

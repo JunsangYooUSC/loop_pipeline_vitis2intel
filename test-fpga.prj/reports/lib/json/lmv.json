@@ -1,0 +1,38 @@
+{
+  "nodes":
+  [
+    {
+      "type":"interface"
+      , "id":35
+      , "name":"A"
+      , "debug":
+      [
+        [
+          {
+            "filename":"loop_pipeline2intel.cpp"
+            , "line":21
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"64"
+          , "Address width":"64"
+          , "Address Space":"0"
+          , "Latency":"1"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"1"
+          , "Wait request":"0"
+          , "Alignment":"0"
+          , "Component":"loop_pipeline"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

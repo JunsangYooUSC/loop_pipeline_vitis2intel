@@ -47,7 +47,8 @@ test-x86-64: $(SOURCE_FILES)
 ifeq ($(VERBOSE),1)
   test-fpga: CXXFLAGS := $(CXXFLAGS) -v
 endif
-test-fpga: CXXFLAGS := $(CXXFLAGS) $(HLS_CXX_FLAGS) -march=Arria10 -o test-fpga
+# test-fpga: CXXFLAGS := $(CXXFLAGS) $(HLS_CXX_FLAGS) -march=Arria10 -o test-fpga
+test-fpga: CXXFLAGS := $(CXXFLAGS) $(HLS_CXX_FLAGS) --simulator "none" -march=Arria10 -o test-fpga
 test-fpga: $(SOURCE_FILES)
 	$(CXX) $(SOURCE_FILES) $(CXXFLAGS)
 	@echo "+--------------------------------------+"

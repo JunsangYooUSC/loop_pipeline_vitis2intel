@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"name":"Project Name","data":["./test-fpga"]},
+{"name":"Target Family, Device","data":["Arria10, 10AX115U1F45I1SG"]},
+{"name":"i++ Version","data":["18.1.0 Build 222"]},
+{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
+{"name":"Command","data":["i++ loop_pipeline2intel.cpp loop_pipeline_test2intel.cpp -v --fpc --fp-relaxed --simulator none -march=Arria10 -o test-fpga"]},
+{"name":"Reports Generated At","data":["Thu Nov  9 21:08:15 2023"]}
+]}

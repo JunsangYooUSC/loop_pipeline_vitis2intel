@@ -18,7 +18,7 @@
 
 #include "loop_pipeline2intel.h"
 
-dout_t loop_pipeline(din_t A[N]) {
+component dout_t loop_pipeline(din_t A[N]) {
 
     int i, j;
     static dout_t acc;

@@ -1,0 +1,114 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Bottleneck", "Details"]
+  , "children":
+  [
+    {
+      "name":"Component: loop_pipeline"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"loop_pipeline2intel.cpp"
+            , "line":21
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"loop_pipeline.B1.start"
+          , "data":
+          ["Yes", ">=1", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Run simulation to verify component's dynamic II. Use the %L report to view results. II is an approximation due to variable inner loop trip count."
+              , "links":
+              [
+                {
+                  "view":"Verification statistics"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"loop_pipeline.B2"
+              , "data":
+              ["Yes", "1", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"loop_pipeline2intel.cpp"
+                    , "line":27
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "name":"Fully unrolled loop"
+                  , "data":
+                  ["n/a", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":29
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"Auto-unrolled"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Auto-unrolled"
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

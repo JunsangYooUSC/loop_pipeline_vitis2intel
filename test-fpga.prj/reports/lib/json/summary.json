@@ -1,0 +1,48 @@
+{
+  "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Component Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"loop_pipeline"
+        , "data":
+        [4708, 4358, 0, 1, 1]
+        , "debug":
+        [
+          [
+            {
+              "filename":"loop_pipeline2intel.cpp"
+              , "line":21
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [4708, 4358, 0, 1, 1]
+        , "data_percent":
+        [0.55103, 0.255033, 0, 0.0658762, 0.744503]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [854400, 1708800, 2713, 1518, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+    ]
+  }
+}

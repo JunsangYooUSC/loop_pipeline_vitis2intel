@@ -1,0 +1,865 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [0.746474, 0.553371, 0.255033, 0, 0.0658762]
+  , "total":
+  [4708, 4358, 0, 1, 1]
+  , "name":"System"
+  , "max_resources":
+  [854400, 1708800, 2713, 1518, 42720]
+  , "children":
+  [
+    {
+      "name":"loop_pipeline"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.746474, 0.553371, 0.255033, 0, 0.0658762]
+      , "total_kernel_resources":
+      [4708, 4358, 0, 1, 1]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Component call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 64 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"64b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Component return"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 20 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"20b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'acc' (loop_pipeline2intel.cpp:24)"
+          , "type":"resource"
+          , "data":
+          [7, 24, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"loop_pipeline2intel.cpp"
+                , "line":24
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 20 and depth 1"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 20 width by 1 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'i' (loop_pipeline2intel.cpp:23)"
+          , "type":"resource"
+          , "data":
+          [14, 46, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"loop_pipeline2intel.cpp"
+                , "line":23
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 6 and depth 1"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 1"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 6 width by 1 depth,\n1 reg, 32 width by 1 depth"
+            }
+          ]
+        }
+        , {
+          "name":"loop_pipeline.B1.start"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [11, 455, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [11, 55, 0, 0, 0]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:30 > ac_int.h:2080 > \nac_int.h:1428 > ac_int.h:670"
+                  , "type":"resource"
+                  , "data":
+                  [0, 400, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":2080
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":1428
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":670
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [14, 9, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"loop_pipeline2intel.cpp:21"
+                  , "type":"resource"
+                  , "data":
+                  [14, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":21
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1, 0, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [12, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"24-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [12, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:21"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":21
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:30 > ac_int.h:2080 > \nac_int.h:1428 > ac_int.h:670"
+                  , "type":"resource"
+                  , "data":
+                  [4100, 3520, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":2080
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":1428
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":670
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [4100, 3520, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"loop_pipeline.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [6, 182, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [6, 162, 0, 0, 0]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:30 > ac_int.h:1516 > \nac_int.h:675"
+                  , "type":"resource"
+                  , "data":
+                  [0, 10, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":1516
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":675
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:30 > ac_int.h:2080 > \nac_int.h:1428 > ac_int.h:671"
+                  , "type":"resource"
+                  , "data":
+                  [0, 10, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":2080
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":1428
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":671
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [44, 59, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [9, 28, 0, 0, 0]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:23"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":23
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:27"
+                  , "type":"resource"
+                  , "data":
+                  [33, 31, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":27
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:30 > ac_int.h:1516 > \nac_int.h:675"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":1516
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":675
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [18, 27, 0, 0, 1]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [4, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"24-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:27"
+                  , "type":"resource"
+                  , "data":
+                  [49, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":27
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"6-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [6, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"6-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:30 > ac_int.h:1516 > \nac_int.h:675"
+                  , "type":"resource"
+                  , "data":
+                  [26, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":1516
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":675
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"20-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [10, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"20-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"loop_pipeline2intel.cpp:30 > ac_int.h:2080 > \nac_int.h:1428 > ac_int.h:671"
+                  , "type":"resource"
+                  , "data":
+                  [390, 0, 0, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":2080
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":1428
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/intelFPGA_pro/18.1/hls/include/HLS/ac_int.h"
+                        , "line":671
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"20-bit Integer Add"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [390, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"20-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"loop_pipeline.B3"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2, 24, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2, 24, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [6, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [6, 8, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"loop_pipeline2intel.cpp:35"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"loop_pipeline2intel.cpp"
+                        , "line":35
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
